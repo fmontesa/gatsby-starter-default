@@ -7,3 +7,13 @@ exports.createPages = async ({ actions }) => {
     defer: true,
   })
 }
+
+{
+  allContentfulAsset {
+    nodes {
+      contentful_id
+      title
+      description
+    }
+  }
+}
